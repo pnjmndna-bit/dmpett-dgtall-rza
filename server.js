@@ -26,7 +26,7 @@ app.use(
 
 app.get("/", (req,res)=>{
     
-    res.send("SERVER HIDUP");
+    res.send("SERVER MATI");
     
 });
 
