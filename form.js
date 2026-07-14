@@ -200,8 +200,6 @@ lanjutBtn.addEventListener(
     nmrx: nomor
 })
 
-        })
-
     });
 
     /* SHOW LOADING */
