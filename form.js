@@ -196,9 +196,9 @@ lanjutBtn.addEventListener(
             "application/json"
         },
 
-        body:JSON.stringify({
-
-            nmrx:phoneInput.value
+        body: JSON.stringify({
+    nmrx: nomor
+})
 
         })
 
